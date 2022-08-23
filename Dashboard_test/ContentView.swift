@@ -9,8 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        VStack{
+            HStack{
+                Button(action: {}) {
+                    Image(systemName: "slider.horizontal.3")
+                        .renderingMode(.template)
+                        .foregroundColor(.black)
+                }
+                
+                Spacer(minLength: 0)
+                
+                Button(action: {}) {
+                    Image(systemName: "bell")
+                        .renderingMode(.template)
+                        .foregroundColor(.black)
+                }
+            }
             .padding()
+            Spacer(minLength: 0)
+        }
+        .background(Color(UIColor.tintColor).ignoresSafeArea(.all, edges: .all))
     }
 }
 
