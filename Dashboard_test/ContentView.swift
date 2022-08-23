@@ -14,7 +14,7 @@ struct ContentView: View {
                 Button(action: {}) {
                     Image(systemName: "slider.horizontal.3")
                         .renderingMode(.template)
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                 }
                 
                 Spacer(minLength: 0)
@@ -22,7 +22,7 @@ struct ContentView: View {
                 Button(action: {}) {
                     Image(systemName: "bell")
                         .renderingMode(.template)
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                 }
             }
             .padding()
